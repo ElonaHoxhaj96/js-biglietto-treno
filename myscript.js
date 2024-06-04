@@ -12,24 +12,22 @@ let over65 = (ageUser > 65 ) ;
 const europerkmorario = 0.21;
 
 // normal price of tickets;
-let price= km * 0.21;
-console.log = (ageUser, price);
+let price = km * 0.21;
+
+console.log(ageUser, price);
 
 // discount 
-
-if ( ageUser===minorenne){
-   const discount_20 =  (prezzo *20/100 )
-   let risultato = "sconto del 20%";
+console.log("condizione:", ageUser, minorenne);
+if ( ageUser < 18){
+    price =  (price *20/100 )
+    
 } else if ( ageUser===over65){
-    const discount_40 = (prezzo *40/100)
-    let risultato = "sconto del 40%"
+    price = (price *40/100)
 
 } else {
-    let risultato = km * 0.21
+    price
 }
 
-console.log = (minorenne , discount_20);
-console.log = (over65 ,  discount_40);
 
 // Show the price to the users;
 
