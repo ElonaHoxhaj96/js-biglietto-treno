@@ -17,11 +17,10 @@ let price = km * 0.21;
 console.log(ageUser, price);
 
 // discount 
-console.log("condizione:", ageUser, minorenne);
 if ( ageUser < 18){
     price =  (price *20/100 )
     
-} else if ( ageUser===over65){
+} else if ( ageUser > 65 ){
     price = (price *40/100)
 
 } else {
