@@ -5,24 +5,31 @@ let km = prompt("Enter the kilometers you have to travel");
 
 // Aske the users their ages!;
 let ageUser = parseInt(prompt("Enter your age from 0 to 99"));
-const minorenne = "age from 0 to 17";
-const over65 = "age from 65 to 99" ;
+let minorenne = (ageUser < 18);
+let over65 = (ageUser > 65 ) ;
 
 // Knowing the price per km, calculate the price by €/km;
 const europerkmorario = 0.21;
 
-// normal price of tickets
-let prezzo = km * 0.21;
-console.log =(ageUser, prezzo)
+// normal price of tickets;
+let price= km * 0.21;
+console.log = (ageUser, price);
 
 // discount 
+
 if ( ageUser===minorenne){
-   let discount_20 = "- 20%"
-} else if ( ageUser ===over65){
-    let discount_40 = "- 40%"
+   const discount_20 =  (prezzo *20/100 )
+   let risultato = "sconto del 20%";
+} else if ( ageUser===over65){
+    const discount_40 = (prezzo *40/100)
+    let risultato = "sconto del 40%"
+
 } else {
-    let somma = km * 0.21
+    let risultato = km * 0.21
 }
+
+console.log = (minorenne , discount_20);
+console.log = (over65 ,  discount_40);
 
 // Show the price to the users;
 
